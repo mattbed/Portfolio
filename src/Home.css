@@ -1,0 +1,46 @@
+.outer-box{
+  width:50vw;
+  margin:auto;
+  margin-top:5vh;
+  font-family: Georgia, serif;
+}
+
+.text-box-01{
+  position: relative;
+  font-size: 5vw;
+}
+
+.text-box-02{
+  position: relative;
+  left: 10vw;
+  bottom: 5vw;
+  font-size: 10vw;
+}
+
+.text-box-03{
+  position: relative;
+  left: 14vw;
+  bottom: 9vw;
+  font-size: 2vw;
+}
+
+.text-box-04{
+  position: relative;
+  left: 10vw;
+  bottom: 13vw;
+  font-size: 10vw;
+}
+
+.text-box-05{
+  position: relative;
+  right: 4vw;
+  bottom: 10vw;
+  font-size: 3vw;
+}
+
+.text-box-06{
+  position: relative;
+  bottom: 10vw;
+  left: 8vw;
+  font-size: 3vw;
+}
