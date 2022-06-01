@@ -53,13 +53,19 @@ function Header() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="nav tabs example" centered>
-          <LinkTab label="Home" {...a11yProps(0)} />
-          <LinkTab label="About" {...a11yProps(1)} />
-          <LinkTab label="Links & Contact" {...a11yProps(2)} />
-          <LinkTab label="Portfolio" {...a11yProps(3)} />
+    <Box sx={{ width: '100%', bgcolor: '#187498'}}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: '#36AE7C'}}>
+        <Tabs 
+          value={value} 
+          onChange={handleChange} 
+          aria-label="nav tabs example" 
+          textColor="inherent" 
+          centered
+          >
+          <LinkTab label="Home" sx={{'&:hover': {color: '#F9D923'}}} {...a11yProps(0)} />
+          <LinkTab label="About" sx={{'&:hover': {color: '#F9D923'}}} {...a11yProps(1)} />
+          <LinkTab label="Links & Contact" sx={{'&:hover': {color: '#F9D923'}}} {...a11yProps(2)} />
+          <LinkTab label="Portfolio" sx={{'&:hover': {color: '#F9D923'}}} {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
