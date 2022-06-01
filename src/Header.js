@@ -7,7 +7,6 @@ import Portfolio from './Portfolio'
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import LinkTab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 
@@ -24,7 +23,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          {children}
         </Box>
       )}
     </div>
@@ -53,13 +52,13 @@ function Header() {
   };
 
   return (
-    <Box sx={{ width: '100%', bgcolor: '#187498'}}>
+    <Box sx={{ width: '96%', height: '96vh', margin: 'auto', bgcolor: '#187498'}}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: '#36AE7C'}}>
         <Tabs 
           value={value} 
           onChange={handleChange} 
           aria-label="nav tabs example" 
-          textColor="inherent" 
+          textColor="inherit" 
           centered
           >
           <LinkTab label="Home" sx={{'&:hover': {color: '#F9D923'}}} {...a11yProps(0)} />
