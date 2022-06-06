@@ -9,6 +9,11 @@
 .text-box-01{
   position: relative;
   font-size: 5vw;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 
 .text-box-02{
@@ -16,6 +21,13 @@
   left: 10vw;
   bottom: 2.5vw;
   font-size: 10vw;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  animation-delay: 1.2s;
+  animation-fill-mode: both;
 }
 
 .text-box-03{
@@ -23,6 +35,13 @@
   left: 14vw;
   bottom: 4.5vw;
   font-size: 2vw;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  animation-delay: 2.4s;
+  animation-fill-mode: both;
 }
 
 .text-box-04{
@@ -30,6 +49,13 @@
   left: 10vw;
   bottom: 6.5vw;
   font-size: 10vw;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  animation-delay: 3.6s;
+  animation-fill-mode: both;
 }
 
 .text-box-05{
@@ -37,6 +63,13 @@
   left: 14vw;
   bottom: 5vw;
   font-size: 3vw;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  animation-delay: 4.8s;
+  animation-fill-mode: both;
 }
 
 .text-box-06{
@@ -44,4 +77,36 @@
   bottom: 5vw;
   left: 26vw;
   font-size: 3vw;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  animation-delay: 6.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
