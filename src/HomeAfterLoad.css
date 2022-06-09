@@ -1,0 +1,26 @@
+.inner-box02{
+  width:90vw;
+  margin:auto;
+  margin-top:5vh;
+  display: flex;
+}
+
+.menu-box{
+  width: 20vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-box{
+  border: 1vw solid white;
+  border-radius: 4vw;
+}
+
+.menu-box-item{
+  width: 100%;
+  height: 13vw;
+  border: 1vw solid white;
+  border-radius: 4vw;
+
+}

@@ -1,9 +1,10 @@
 import './Header.css';
 import React from 'react';
-import Home from './Home'
-import About from './About'
-import Contact from './Contact'
-import Portfolio from './Portfolio'
+import Home from './Home';
+import HomeAfterLoad from './HomeAfterLoad';
+import About from './About';
+import Contact from './Contact';
+import Portfolio from './Portfolio';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import LinkTab from '@mui/material/Tab';
@@ -44,13 +45,19 @@ function a11yProps(index) {
 }
 
 function Header() {
-
+  
   const [value, setValue] = React.useState(0);
-
+  
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  
+  const [counter, setCounter] = React.useState(true);
+  //still buggy, figure out why this setTimeout isn't working properly
+  window.onload = function() {
+    setTimeout(setCounter(false), 10000);
+  };
+  console.log(counter);
   return (
     <Box sx={{ width: '96%', height: '96vh', margin: 'auto', bgcolor: '#187498'}}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: '#36AE7C'}}>
@@ -68,7 +75,7 @@ function Header() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Home />
+      {(counter ? <Home /> : <HomeAfterLoad />)}
       </TabPanel>
       <TabPanel value={value} index={1}>
         <About />
