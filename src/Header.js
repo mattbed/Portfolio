@@ -53,9 +53,11 @@ function Header() {
   };
   
   const [counter, setCounter] = React.useState(true);
-  //still buggy, figure out why this setTimeout isn't working properly
+  const updateCounter = function() {
+    setCounter(false);
+  }
   window.onload = function() {
-    setTimeout(setCounter(false), 10000);
+    setTimeout(updateCounter, 10000);
   };
   console.log(counter);
   return (

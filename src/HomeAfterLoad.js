@@ -1,5 +1,5 @@
 import './HomeAfterLoad.css';
-import Home from './Home';
+import HomeImage from './portfolio.png';
 import React from "react";
 
 function HomeAfterLoad() {
@@ -7,7 +7,7 @@ function HomeAfterLoad() {
     <div className="outer-box">
       <main className="inner-box02">
         <div className="home-box">
-          <Home />
+          <img src={HomeImage} class="width-fit" />
         </div>
         <div className="menu-box">
           <div className="menu-box-item">
