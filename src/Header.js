@@ -59,7 +59,7 @@ function Header() {
   window.onload = function() {
     setTimeout(updateCounter, 10000);
   };
-  console.log(counter);
+
   return (
     <Box sx={{ width: '96%', height: '96vh', margin: 'auto', bgcolor: '#187498'}}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: '#36AE7C'}}>
@@ -77,7 +77,8 @@ function Header() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-      {(counter ? <Home /> : <HomeAfterLoad />)}
+      {/* {(counter ? <Home /> : <HomeAfterLoad />)} */}
+      <HomeAfterLoad />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <About />

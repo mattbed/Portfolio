@@ -1,0 +1,30 @@
+.transform-box {
+  width:50%;
+  margin:auto;
+  margin-top:5%;
+}
+
+.width-fit-transform{
+  position: absolute;
+  margin: auto;
+  top: -80%;
+  bottom: -80%;
+  left: -80%;
+  right: -80%;
+
+  width: 70%;
+  height: auto;
+  
+  animation: resize 0.8s ease;
+  animation-fill-mode: both;
+  transform-origin: top left;
+}
+
+@keyframes resize {
+  0% {
+      transform: scale(1, 1);
+  }
+  100% {
+      transform: scale(0.5, 0.5);
+  }
+}
