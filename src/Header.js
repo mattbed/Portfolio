@@ -77,8 +77,9 @@ function Header() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-      {/* {(counter ? <Home /> : <HomeAfterLoad />)} */}
-      <HomeAfterLoad />
+      {(counter ? <Home /> : <HomeAfterLoad />)}
+      {/* testing purposes */}
+      {/* <HomeAfterLoad /> */}
       </TabPanel>
       <TabPanel value={value} index={1}>
         <About />

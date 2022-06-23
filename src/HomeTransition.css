@@ -1,21 +1,33 @@
 .transform-box {
-  width:50%;
+  /* width:50%;
   margin:auto;
-  margin-top:5%;
+  margin-top:5%; */
+  width:90vw;
+  margin:auto;
+  margin-top:5vh;
+  display: flex;
 }
 
 .width-fit-transform{
   position: absolute;
   margin: auto;
-  top: -80%;
+  top: -68%;
   bottom: -80%;
-  left: -80%;
+  left: -88%;
   right: -80%;
 
-  width: 70%;
+  width: 72%;
   height: auto;
+
+  /* top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;
+
+  width: 100%;
+  height: auto; */
   
-  animation: resize 0.8s ease;
+  animation: resize 0.3s linear;
   animation-fill-mode: both;
   transform-origin: top left;
 }

@@ -6,7 +6,7 @@ function HomeTransition() {
    return (
     <div className="outer-box">
       <main className="transform-box">
-        <img src={HomeImage} class="width-fit-transform" />
+        <img src={HomeImage} className="width-fit-transform" alt=""/>
       </main>
     </div>
   );
